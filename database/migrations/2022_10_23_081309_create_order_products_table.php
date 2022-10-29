@@ -20,7 +20,6 @@ return new class extends Migration
             $table->unsignedInteger('price');
             $table->unsignedInteger('quantity');
             $table->foreignId('coupon_id')->constrained();
-            $table->unsignedInteger('price');
             $table->timestamps();
         });
     }
